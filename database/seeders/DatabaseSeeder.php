@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\Producto::factory(200)->create();
         \App\Models\Sucursal::factory(1)->create();
 
+        $this->call(TipoDocumentoSeeder::class);
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
