@@ -19,7 +19,7 @@ class TipoProductoFactory extends Factory
         return [
             'nombre' => $this->faker->name(),
             'descripcion' => $this->faker->text(500),
-            'estado' => rand(0,1)
+            // 'estado' => rand(0,1)
         ];
     }
 }
