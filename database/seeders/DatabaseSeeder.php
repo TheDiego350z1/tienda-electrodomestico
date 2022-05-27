@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TipoDocumentoSeeder::class);
         $this->call(TipoClienteSeeder::class);
         $this->call(TipoEntregaSeeder::class);
+        $this->call(TipoPagoSeeder::class);
 
         // \App\Models\User::factory(10)->create();
 
