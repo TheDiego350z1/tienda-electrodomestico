@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Sucursal::factory(1)->create();
 
         $this->call(TipoDocumentoSeeder::class);
+        $this->call(TipoClienteSeeder::class);
 
         // \App\Models\User::factory(10)->create();
 
