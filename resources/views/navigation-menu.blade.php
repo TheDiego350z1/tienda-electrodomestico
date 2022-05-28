@@ -11,11 +11,6 @@ $nav_links = [
         'active' => request()->routeIs('ventas')
     ],
     [
-        'name' => 'Reportes',
-        'route' => route('reportes'),
-        'active' => request()->routeIs('reportes')
-    ],
-    [
         'name' => 'Vendedores',
         'route' => route('vendedores'),
         'active' => request()->routeIs('vendedores')
