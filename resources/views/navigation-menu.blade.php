@@ -5,11 +5,11 @@ $nav_links = [
     //     'route' => route('dashboard'),
     //     'active' => request()->routeIs('dashboard')
     // ],
-    [
-        'name' => 'Ventas',
-        'route' => route('ventas'),
-        'active' => request()->routeIs('ventas')
-    ],
+    // [
+    //     'name' => 'Ventas',
+    //     'route' => route('ventas'),
+    //     'active' => request()->routeIs('ventas')
+    // ],
     [
         'name' => 'Vendedores',
         'route' => route('vendedores'),
