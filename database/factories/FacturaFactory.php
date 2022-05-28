@@ -22,8 +22,8 @@ class FacturaFactory extends Factory
             'tipo_entrega_id' => 1,
             'metodo_pago_id' => 1,
             'estado_factura_id' => 1,
-            'cliente_id' => 1,
-            'vendedor_id' => 1,
+            'cliente_id' => rand(1,10),
+            'vendedor_id' => rand(1,5),
             'total_sumas' => 100,
             'total' => 100,
         ];
