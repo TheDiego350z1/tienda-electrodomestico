@@ -32,9 +32,6 @@
                         <x-jet-button wire:click="buscar">
                             Buscar
                         </x-jet-button>
-                        <x-jet-button wire:click="buscar">
-                            Exportar Reporte
-                        </x-jet-button>
                     </div>
 
                 </div>

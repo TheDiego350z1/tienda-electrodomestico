@@ -35,7 +35,6 @@
                             type="date"
                             wire:model="fechaInicio"
                         />
-                        {{$fechaInicio}}
                     </div>
 
                     <div class="mb-4">
@@ -44,7 +43,6 @@
                             type="date"
                             wire:model="fechaFin"
                         />
-                        {{$fechaFin}}
                     </div>
 
                     <div class="mb-4 mt-6 px-1">
@@ -55,10 +53,41 @@
 
                 </div>
 
-                <div>
-                    {{-- {{$vendedor->facturas}} --}}
-                    {{$ventas}}
+                <div class="flex justify-center">
+
+                    @if ($ventas)
+                        <table class="table table-fixed">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Vendedor</th>
+                                    <th>Tipo de Documento</th>
+                                    <th>Metodo de Pago</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach ($ventas as $venta)
+                                    <tr>
+                                        <td>{{ $venta->created_at }}</td>
+                                        <td>{{ $venta->vendedor->nombre}}</td>
+                                        <td>{{ $venta->tipoDocumento->nombre}}</td>
+                                        <td>{{ $venta->metodoPago->nombre}}</td>
+                                        <td>{{ $venta->total}}</td>
+                                    </tr>
+                                @endforeach
+
+                            </tbody>
+
+                        </table>
+
+                        {{-- {{$ventas->links()}} --}}
+                    @endif
+
+
                 </div>
+
             </div>
         </div>
     </div>
