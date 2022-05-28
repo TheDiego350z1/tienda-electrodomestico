@@ -24,4 +24,9 @@ class Cliente extends Model
     {
         return $this->belongsTo(TipoCliente::class, 'tipo_cliente_id');
     }
+
+    public function compras()
+    {
+        return $this->hasMany(Factura::class, 'cliente_id');
+    }
 }

@@ -21,6 +21,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('ventas', App\Http\Livewire\Ventas::class)->name('ventas');
     Route::get('vendedores', App\Http\Livewire\Reportes\Vendedores::class)->name('vendedores');
     Route::get('reporte-ventas', App\Http\Livewire\Reportes\Ventas::class)->name('reporte.ventas');
+    Route::get('clientes', App\Http\Livewire\Reportes\Clientes::class)->name('clientes');
 });
 
 Route::middleware([

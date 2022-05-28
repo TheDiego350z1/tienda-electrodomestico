@@ -1,10 +1,10 @@
 @php
 $nav_links = [
-    [
-        'name' => 'Dashboard',
-        'route' => route('dashboard'),
-        'active' => request()->routeIs('dashboard')
-    ],
+    // [
+    //     'name' => 'Dashboard',
+    //     'route' => route('dashboard'),
+    //     'active' => request()->routeIs('dashboard')
+    // ],
     [
         'name' => 'Ventas',
         'route' => route('ventas'),
@@ -19,6 +19,11 @@ $nav_links = [
         'name' => 'Reporte de Ventas',
         'route' => route('reporte.ventas'),
         'active' => request()->routeIs('reporte.ventas')
+    ],
+    [
+        'name' => 'Reporte de Clienes',
+        'route' => route('clientes'),
+        'active' => request()->routeIs('clientes')
     ],
 ];
 @endphp
