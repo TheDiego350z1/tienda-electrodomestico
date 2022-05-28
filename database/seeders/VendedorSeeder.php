@@ -14,6 +14,10 @@ class VendedorSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Vendedor::create([
+            'nombre' => 'Diego Garcia',
+            'sucursal_id' => 1,
+            'codigo' => '11111'
+        ]);
     }
 }

@@ -17,7 +17,9 @@ class VendedorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nombre' => $this->faker->name(),
+            'sucursal_id' => 1,
+            'codigo' => $this->faker->randomNumber(5, true)
         ];
     }
 }

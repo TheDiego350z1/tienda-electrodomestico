@@ -24,8 +24,12 @@ class DatabaseSeeder extends Seeder
         $this->call(TipoEntregaSeeder::class);
         $this->call(TipoPagoSeeder::class);
         $this->call(EstadoFacturaSeeder::class);
-        $this->call(UserSeedersatus::class);
+        \App\Models\Vendedor::factory(100)->create();
+        $this->call(VendedorSeeder::class);
 
+        \App\Models\Cliente::factory(1)->create();
+        \App\Models\Factura::factory(100)->create();
+        $this->call(UserSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('ventas', App\Http\Livewire\Ventas::class)->name('ventas');
+    Route::get('reportes', App\Http\Livewire\Reportes\Index::class)->name('reportes');
+    Route::get('vendedores', App\Http\Livewire\Reportes\Vendedores::class)->name('vendedores');
+    Route::get('reporte-ventas', App\Http\Livewire\Reportes\Ventas::class)->name('reporte.ventas');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

@@ -17,7 +17,15 @@ class FacturaFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'sucursal_id' => 1,
+            'tipo_documento_id' => 1,
+            'tipo_entrega_id' => 1,
+            'metodo_pago_id' => 1,
+            'estado_factura_id' => 1,
+            'cliente_id' => 1,
+            'vendedor_id' => 1,
+            'total_sumas' => 100,
+            'total' => 100,
         ];
     }
 }

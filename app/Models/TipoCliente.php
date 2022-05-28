@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class TipoCliente extends Model
 {
     use HasFactory;
+
+    public function Clientes()
+    {
+        return $this->hasMany(Cliente::class, 'tipo_cliente_id');
+    }
 }

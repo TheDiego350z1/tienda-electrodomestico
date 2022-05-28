@@ -17,7 +17,12 @@ class ClienteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nombre' => $this->faker->name(),
+            'apellido' => $this->faker->name(),
+            'direccion' => $this->faker->address(),
+            'dui' => '000000000',
+            'estado' => 1,
+            'tipo_cliente_id' => 1
         ];
     }
 }
